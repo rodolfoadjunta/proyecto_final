@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: RGB(28, 28, 28) ; 
+    grid-area: cab;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+aside{
+    background-color: RGB(28, 28, 28) ; 
+    grid-area: aside;
+}
+
+header ul{
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    color: wheat;
+    background-color: RGB(28, 28, 28) ;
+}
+
+h3{
+    justify-content: center;
+    text-align: center;
+    
+}
+main{
+    /*background-color: lightseagreen;*/
+    grid-area: main;
+    
+}
+main table{
+    /*background-color: bisque;*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    
+}
+
+.body1 {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.05fr;
+    grid-template-areas: 
+    "aside cab cab"
+    "main main main"
+    "footer footer sec"}
+
+footer{
+    background-color: RGB(28, 28, 28) ; 
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer li{
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+section{
+    background-color: RGB(28, 28, 28);
+    grid-area: sec;
+    display: flex;
+    justify-content:center;    
+}
+a{
+    text-decoration: none;
+list-style: none;
+color: wheat;
+
+}
+
+.body {
+    background-image: url(../css/img/fondo3.png);
+    height: 600px;
+    background-attachment:fixed;
+    background-position: right;
+    background-repeat:no-repeat;
+    background: size 50px;
+    margin-bottom: 50px;
+ }
+
+
+ /*animaciones*/
+ .anima {  
+    background-color: RGB(28, 28, 28) ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.anima ul{
+    color:wheat;
+    text-decoration: none;
+list-style: none;
+justify-content: space-evenly;
+display: flex;
+flex-direction: row;
+gap: 50px;
+
+}
+
+.anima::content{
+    animation: movimientos 4s;
+}
+
+
+ /*animaciones de prueba
+.anima {
+    background-color: lightcoral;
+    width: 200%;
+    height: 150px;
+    margin: 100px auto;
+    
+    }
+.anima:hover{
+    animation: movimientos 4s;
+}
+    @keyframes movimientos {
+        10% {
+            background-color: lightseagreen;
+            transform: rotate(180deg);
+        }
+
+        20% {
+            border-radius: 50%;
+            background-color: lightslategray;
+        }
+        
+        100% {
+            background-color: black;
+        }
+        }
+*/
+   
+
+/* inicio de comentario/*
