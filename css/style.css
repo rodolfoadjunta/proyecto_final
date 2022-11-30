@@ -46,7 +46,6 @@ main{
     
 }
 main table{
-    /*background-color: bisque;*/
     justify-content: center;
     align-items: center;
     display: flex;
@@ -100,61 +99,42 @@ color: wheat;
     background: size 50px;
     margin-bottom: 50px;
  }
+/*media*/
 
 
- /*animaciones*/
- .anima {  
-    background-color: RGB(28, 28, 28) ; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.anima ul{
-    color:wheat;
-    text-decoration: none;
-list-style: none;
-justify-content: space-evenly;
-display: flex;
-flex-direction: row;
-gap: 50px;
-
-}
-
-.anima::content{
-    animation: movimientos 4s;
-}
-
-
- /*animaciones de prueba
 .anima {
-    background-color: lightcoral;
-    width: 200%;
-    height: 150px;
-    margin: 100px auto;
-    
-    }
-.anima:hover{
-    animation: movimientos 4s;
+    overflow: hidden;
+    background-color: RGB(28, 28, 28) 
 }
-    @keyframes movimientos {
-        10% {
-            background-color: lightseagreen;
-            transform: rotate(180deg);
-        }
 
-        20% {
-            border-radius: 50%;
-            background-color: lightslategray;
-        }
-        
-        100% {
-            background-color: black;
-        }
-        }
-*/
-   
+.anima ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:wheat;
+}
 
-/* inicio de comentario/*
+
+@media screen and (max-width: 576px){
+    .anima ul li {
+        float: none;
+        width: 100%;
+    }  
+    .oculto {
+    display: none;
+    }  
+}
+
+/*Boostrap*/
+.btn-propio {
+    color: black;
+    background-color: wheat;
+    border-radius:40% ;
+    border-color: black;
+}
+
+.btn-propio :hover{
+    background-color: aqua;
+}
